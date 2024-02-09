@@ -53,11 +53,11 @@
     if (shouldUseNativePrompt && [SKStoreReviewController class]) {
         [self launchInAppReview];
     } else {
-        NSString *appId = @"";
+        NSString *appId = @"1418079413";
 
-        if ([command.arguments count] >= 1) {
-            appId = (NSString *) (command.arguments)[0];
-        }
+        // if ([command.arguments count] >= 1) {
+        //     appId = (NSString *) (command.arguments)[0];
+        // }
 
         [self launchAppStore:appId];
     }
